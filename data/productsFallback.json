@@ -1,0 +1,10 @@
+[
+  {
+    "id": "camiseta-css-azul",
+    "nome": "Camisa CSS - Azul",
+    "descricao": "Camiseta confortável feita em algodão, com estampa exclusiva para quem ama tecnologia e programação.",
+    "preco": 59.9,
+    "imagem": "assets/images/products/camiseta-css.png",
+    "created_at": "2026-05-29T00:00:00.000Z"
+  }
+]
