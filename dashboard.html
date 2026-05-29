@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B7 Admin | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <div class="flex min-h-screen">
+        <aside class="fixed inset-y-0 left-0 z-40 hidden w-72 border-r border-white/10 bg-white/10 p-5 shadow-2xl backdrop-blur-2xl lg:flex lg:flex-col">
+            <a href="dashboard.html" class="mb-10 flex items-center gap-3 rounded-2xl p-2 transition-all hover:bg-white/10">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-fuchsia-500 shadow-lg shadow-blue-500/25">
+                    <svg class="h-7 w-7 text-white" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 3L20 7.5V16.5L12 21L4 16.5V7.5L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                        <path d="M12 8L16 10.25V14.75L12 17L8 14.75V10.25L12 8Z" fill="currentColor" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-lg font-bold text-white">B7 Admin</p>
+                    <p class="text-xs text-slate-400">Controle inteligente</p>
+                </div>
+            </a>
+
+            <nav class="space-y-2">
+                <a href="#" class="flex items-center gap-3 rounded-2xl bg-blue-500/15 px-4 py-3 text-blue-200 shadow-lg shadow-blue-500/10 transition-all hover:bg-blue-500/20">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 13H11V20H4V13Z" stroke="currentColor" stroke-width="1.8"/><path d="M13 4H20V20H13V4Z" stroke="currentColor" stroke-width="1.8"/><path d="M4 4H11V11H4V4Z" stroke="currentColor" stroke-width="1.8"/></svg>
+                    Dashboard
+                </a>
+                <a href="#" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-slate-300 transition-all hover:bg-white/10 hover:text-white">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 7H4.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M8 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 12H4.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M8 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 17H4.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                    Projetos
+                </a>
+                <a href="#" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-slate-300 transition-all hover:bg-white/10 hover:text-white">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M16 11C18.2091 11 20 9.20914 20 7C20 4.79086 18.2091 3 16 3C13.7909 3 12 4.79086 12 7C12 9.20914 13.7909 11 16 11Z" stroke="currentColor" stroke-width="1.8"/><path d="M8 13C10.2091 13 12 11.2091 12 9C12 6.79086 10.2091 5 8 5C5.79086 5 4 6.79086 4 9C4 11.2091 5.79086 13 8 13Z" stroke="currentColor" stroke-width="1.8"/><path d="M2.5 21C3.2 17.7 5.2 16 8 16C10.8 16 12.8 17.7 13.5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M13 14.5C16.4 14.5 18.8 16.4 19.5 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    Usuários
+                </a>
+                <a href="#" class="flex items-center gap-3 rounded-2xl px-4 py-3 text-slate-300 transition-all hover:bg-white/10 hover:text-white">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 17V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 17V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 17V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M20 19H4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    Relatórios
+                </a>
+            </nav>
+
+            <div class="mt-auto rounded-2xl border border-white/10 bg-gradient-to-br from-blue-500/15 to-fuchsia-500/15 p-5 shadow-lg backdrop-blur">
+                <p class="text-sm font-semibold text-white">Plano Enterprise</p>
+                <p class="mt-1 text-xs leading-5 text-slate-400">Recursos avançados ativos para sua conta.</p>
+                <button class="mt-4 w-full rounded-xl bg-white/10 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-white/20" type="button">Ver detalhes</button>
+            </div>
+        </aside>
+
+        <div class="flex min-h-screen flex-1 flex-col lg:pl-72">
+            <header class="sticky top-0 z-30 border-b border-white/10 bg-slate-950/70 px-4 py-4 backdrop-blur-2xl sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-fuchsia-500 shadow-lg shadow-blue-500/25 lg:hidden">
+                            <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3L20 7.5V16.5L12 21L4 16.5V7.5L12 3Z" stroke="currentColor" stroke-width="1.8"/><path d="M12 8L16 10.25V14.75L12 17L8 14.75V10.25L12 8Z" fill="currentColor"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Visão geral</p>
+                            <h1 class="text-xl font-bold text-white sm:text-2xl">Dashboard</h1>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <button class="hidden rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-slate-200 transition-all hover:bg-white/15 sm:inline-flex" type="button">Exportar</button>
+                        <button id="logoutButton" class="inline-flex items-center gap-2 rounded-2xl bg-rose-500/15 px-4 py-3 text-sm font-semibold text-rose-200 transition-all hover:bg-rose-500/25" type="button">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 6H6V18H10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 8L18 12L14 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                            Sair
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="flex-1 px-4 py-6 sm:px-6 lg:px-8">
+                <section class="mb-8 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-blue-600/80 via-indigo-600/70 to-fuchsia-600/80 p-6 shadow-2xl shadow-blue-950/30 backdrop-blur-xl sm:p-8">
+                    <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                        <div>
+                            <span class="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white/90 backdrop-blur">Autenticado</span>
+                            <h2 class="mt-5 text-3xl font-bold tracking-tight text-white sm:text-4xl">Bem-vindo de volta, Admin.</h2>
+                            <p class="mt-3 max-w-2xl text-sm leading-6 text-white/75 sm:text-base">Acompanhe indicadores, atividade recente e desempenho da plataforma em tempo real.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 sm:flex">
+                            <div class="rounded-2xl bg-white/10 p-4 text-center backdrop-blur"><div id="revenueValue" class="text-2xl font-bold text-white">R$ 84k</div><div class="text-xs text-white/70">receita</div></div>
+                            <div class="rounded-2xl bg-white/10 p-4 text-center backdrop-blur"><div id="growthValue" class="text-2xl font-bold text-white">+18%</div><div class="text-xs text-white/70">crescimento</div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                    <article class="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-lg backdrop-blur-xl transition-all hover:-translate-y-1 hover:bg-white/15">
+                        <div class="flex items-center justify-between"><div class="rounded-2xl bg-blue-500/15 p-3 text-blue-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M4 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M20 19H4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 16V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 16V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 16V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="text-sm text-emerald-300">+12.4%</span></div>
+                        <p class="mt-5 text-sm text-slate-400">Vendas</p><h3 id="salesValue" class="mt-1 text-3xl font-bold text-white">1.284</h3>
+                    </article>
+                    <article class="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-lg backdrop-blur-xl transition-all hover:-translate-y-1 hover:bg-white/15">
+                        <div class="flex items-center justify-between"><div class="rounded-2xl bg-fuchsia-500/15 p-3 text-fuchsia-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M16 11C18.2091 11 20 9.20914 20 7C20 4.79086 18.2091 3 16 3C13.7909 3 12 4.79086 12 7C12 9.20914 13.7909 11 16 11Z" stroke="currentColor" stroke-width="1.8"/><path d="M8 13C10.2091 13 12 11.2091 12 9C12 6.79086 10.2091 5 8 5C5.79086 5 4 6.79086 4 9C4 11.2091 5.79086 13 8 13Z" stroke="currentColor" stroke-width="1.8"/></svg></div><span class="text-sm text-emerald-300">+8.1%</span></div>
+                        <p class="mt-5 text-sm text-slate-400">Usuários</p><h3 id="usersValue" class="mt-1 text-3xl font-bold text-white">9.842</h3>
+                    </article>
+                    <article class="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-lg backdrop-blur-xl transition-all hover:-translate-y-1 hover:bg-white/15">
+                        <div class="flex items-center justify-between"><div class="rounded-2xl bg-emerald-500/15 p-3 text-emerald-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M4 7H20V17H4V7Z" stroke="currentColor" stroke-width="1.8"/><path d="M7 12H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="text-sm text-emerald-300">+21%</span></div>
+                        <p class="mt-5 text-sm text-slate-400">Pedidos</p><h3 id="ordersValue" class="mt-1 text-3xl font-bold text-white">742</h3>
+                    </article>
+                    <article class="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-lg backdrop-blur-xl transition-all hover:-translate-y-1 hover:bg-white/15">
+                        <div class="flex items-center justify-between"><div class="rounded-2xl bg-amber-500/15 p-3 text-amber-300"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M12 3L14.8 8.7L21 9.6L16.5 14L17.6 20.2L12 17.3L6.4 20.2L7.5 14L3 9.6L9.2 8.7L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><span class="text-sm text-rose-300">-2.3%</span></div>
+                        <p class="mt-5 text-sm text-slate-400">Satisfação</p><h3 id="satisfactionValue" class="mt-1 text-3xl font-bold text-white">96%</h3>
+                    </article>
+                </section>
+
+                <section class="mt-8 grid gap-6 xl:grid-cols-[1.4fr_0.6fr]">
+                    <div class="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-lg backdrop-blur-xl">
+                        <div class="mb-6 flex items-center justify-between"><div><h3 class="text-lg font-bold text-white">Performance semanal</h3><p class="text-sm text-slate-400">Dados simulados dos últimos 7 dias</p></div><span class="rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-300">Saudável</span></div>
+                        <div id="weeklyPerformance" class="flex h-72 items-end gap-3 rounded-2xl bg-slate-950/40 p-4">
+                            <div class="flex flex-1 flex-col justify-end gap-2"><div class="h-[42%] rounded-t-2xl bg-gradient-to-t from-blue-600 to-cyan-400"></div><span class="text-center text-xs text-slate-500">Seg</span></div>
+                            <div class="flex flex-1 flex-col justify-end gap-2"><div class="h-[66%] rounded-t-2xl bg-gradient-to-t from-blue-600 to-cyan-400"></div><span class="text-center text-xs text-slate-500">Ter</span></div>
+                            <div class="flex flex-1 flex-col justify-end gap-2"><div class="h-[51%] rounded-t-2xl bg-gradient-to-t from-blue-600 to-cyan-400"></div><span class="text-center text-xs text-slate-500">Qua</span></div>
+                            <div class="flex flex-1 flex-col justify-end gap-2"><div class="h-[78%] rounded-t-2xl bg-gradient-to-t from-blue-600 to-cyan-400"></div><span class="text-center text-xs text-slate-500">Qui</span></div>
+                            <div class="flex flex-1 flex-col justify-end gap-2"><div class="h-[88%] rounded-t-2xl bg-gradient-to-t from-blue-600 to-cyan-400"></div><span class="text-center text-xs text-slate-500">Sex</span></div>
+                            <div class="flex flex-1 flex-col justify-end gap-2"><div class="h-[58%] rounded-t-2xl bg-gradient-to-t from-blue-600 to-cyan-400"></div><span class="text-center text-xs text-slate-500">Sáb</span></div>
+                            <div class="flex flex-1 flex-col justify-end gap-2"><div class="h-[70%] rounded-t-2xl bg-gradient-to-t from-blue-600 to-cyan-400"></div><span class="text-center text-xs text-slate-500">Dom</span></div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-lg backdrop-blur-xl">
+                        <h3 class="text-lg font-bold text-white">Atividade recente</h3>
+                        <div id="recentActivity" class="mt-6 space-y-4">
+                            <div class="flex gap-3"><div class="mt-1 h-2.5 w-2.5 rounded-full bg-blue-400"></div><div><p class="text-sm text-white">Novo pedido aprovado</p><p class="text-xs text-slate-500">há 2 min</p></div></div>
+                            <div class="flex gap-3"><div class="mt-1 h-2.5 w-2.5 rounded-full bg-emerald-400"></div><div><p class="text-sm text-white">Meta diária alcançada</p><p class="text-xs text-slate-500">há 18 min</p></div></div>
+                            <div class="flex gap-3"><div class="mt-1 h-2.5 w-2.5 rounded-full bg-fuchsia-400"></div><div><p class="text-sm text-white">Usuário premium criado</p><p class="text-xs text-slate-500">há 42 min</p></div></div>
+                            <div class="flex gap-3"><div class="mt-1 h-2.5 w-2.5 rounded-full bg-amber-400"></div><div><p class="text-sm text-white">Relatório exportado</p><p class="text-xs text-slate-500">há 1 hora</p></div></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? 'http://localhost:3000/api'
+            : '/api';
+        const token = localStorage.getItem('b7AuthToken');
+
+        if (!token || localStorage.getItem('b7Authenticated') !== 'true') {
+            window.location.href = 'index.html';
+        }
+
+        function formatNumber(value) {
+            return new Intl.NumberFormat('pt-BR').format(value || 0);
+        }
+
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(value || 0);
+        }
+
+        function heightClass(value) {
+            if (value >= 90) return 'h-[90%]';
+            if (value >= 80) return 'h-[80%]';
+            if (value >= 70) return 'h-[70%]';
+            if (value >= 60) return 'h-[60%]';
+            if (value >= 50) return 'h-[50%]';
+            if (value >= 40) return 'h-[40%]';
+            if (value >= 30) return 'h-[30%]';
+            if (value >= 20) return 'h-[20%]';
+            return 'h-[10%]';
+        }
+
+        async function apiRequest(path, options = {}) {
+            const response = await fetch(`${API_BASE_URL}${path}`, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${token}`,
+                    ...(options.headers || {})
+                },
+                ...options
+            });
+            const result = await response.json().catch(() => ({ success: false, message: 'Resposta inválida do servidor.' }));
+            if (!response.ok || !result.success) {
+                throw new Error(result.message || 'Erro ao carregar dados.');
+            }
+            return result;
+        }
+
+        function renderDashboard(stats) {
+            document.getElementById('revenueValue').textContent = formatCurrency(stats.revenue);
+            document.getElementById('growthValue').textContent = `+${stats.growth || 0}%`;
+            document.getElementById('salesValue').textContent = formatNumber(stats.sales);
+            document.getElementById('usersValue').textContent = formatNumber(stats.users);
+            document.getElementById('ordersValue').textContent = formatNumber(stats.orders);
+            document.getElementById('satisfactionValue').textContent = `${stats.satisfaction || 0}%`;
+
+            const days = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'];
+            document.getElementById('weeklyPerformance').innerHTML = (stats.weeklyPerformance || []).map((value, index) => `
+                <div class="flex flex-1 flex-col justify-end gap-2"><div class="${heightClass(value)} rounded-t-2xl bg-gradient-to-t from-blue-600 to-cyan-400"></div><span class="text-center text-xs text-slate-500">${days[index] || ''}</span></div>
+            `).join('');
+
+            const colors = ['bg-blue-400', 'bg-emerald-400', 'bg-fuchsia-400', 'bg-amber-400'];
+            document.getElementById('recentActivity').innerHTML = (stats.recentActivity || []).map((item, index) => `
+                <div class="flex gap-3"><div class="mt-1 h-2.5 w-2.5 rounded-full ${colors[index % colors.length]}"></div><div><p class="text-sm text-white">${item.message}</p><p class="text-xs text-slate-500">${item.time}</p></div></div>
+            `).join('');
+        }
+
+        async function loadDashboard() {
+            try {
+                const result = await apiRequest('/dashboard/stats');
+                renderDashboard(result.data);
+            } catch (error) {
+                if (error.message.toLowerCase().includes('token')) {
+                    localStorage.removeItem('b7AuthToken');
+                    localStorage.removeItem('b7Authenticated');
+                    localStorage.removeItem('b7User');
+                    window.location.href = 'index.html';
+                }
+            }
+        }
+
+        document.getElementById('logoutButton').addEventListener('click', async () => {
+            try {
+                await apiRequest('/auth/logout', { method: 'POST' });
+            } finally {
+                localStorage.removeItem('b7AuthToken');
+                localStorage.removeItem('b7Authenticated');
+                localStorage.removeItem('b7User');
+                window.location.href = 'index.html';
+            }
+        });
+
+        loadDashboard();
+    </script>
+</body>
+</html>
